@@ -18,7 +18,7 @@ import { Provider } from 'react-redux';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import store from './store';
+import storeFactory from './store';
 import router from './router';
 import history from './history';
 
@@ -30,6 +30,9 @@ injectTapEventPlugin();
 let routes = require('./routes.json').default; // Loaded with utils/routes-loader.js
 
 const container = document.getElementById('container');
+
+const store = storeFactory();
+window.store = store;
 
 function renderComponent(component) {
   ReactDOM.render(

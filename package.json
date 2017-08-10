@@ -9,8 +9,10 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
+    "debug": "^3.0.0",
     "fastclick": "^1.0.6",
     "history": "^4.6.1",
+    "immutability-helper": "^2.3.1",
     "material-ui": "^0.18.7",
     "prop-types": "^15.5.10",
     "react": "^15.4.2",

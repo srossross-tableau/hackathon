@@ -10,6 +10,7 @@
 
 import React, { PropTypes } from 'react';
 import Vega from '../../components/Vega';
+import DataPane from '../../components/DataPane';
 
 const spec = {
   $schema: 'https://vega.github.io/schema/vega/v3.0.json',
@@ -110,11 +111,6 @@ const spec = {
 class HomePage extends React.Component {
 
   static propTypes = {
-    articles: PropTypes.arrayOf(PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-    }).isRequired).isRequired,
   };
 
   componentDidMount() {
@@ -123,8 +119,10 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div style={{ display: 'flex' }}>
-        <Vega spec={spec} />
+      <div style={{ display: 'flex', height: '100%', width: '100%' }}>
+        <DataPane />
+        <div style={{ minWidth: '100px', flexGrow: 1 }} />
+        <div style={{ minWidth: '260px', borderLeft: '1px solid #eeeeee' }} />
       </div>
     );
   }

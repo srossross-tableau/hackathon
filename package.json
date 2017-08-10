@@ -11,11 +11,15 @@
     "classnames": "^2.2.5",
     "fastclick": "^1.0.6",
     "history": "^4.6.1",
+    "material-ui": "^0.18.7",
+    "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-mdl": "^1.9.0",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
+    "vega": "^3.0.0-rc4",
+    "vega-embed": "^3.0.0-beta.19",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {

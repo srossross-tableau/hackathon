@@ -15,13 +15,13 @@ import s from './Header.css';
 
 class Header extends React.Component {
 
-  componentDidMount() {
-    window.componentHandler.upgradeElement(this.root);
-  }
-
-  componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.root);
-  }
+  // componentDidMount() {
+  //   window.componentHandler.upgradeElement(this.root);
+  // }
+  //
+  // componentWillUnmount() {
+  //   window.componentHandler.downgradeElements(this.root);
+  // }
 
   render() {
     return (

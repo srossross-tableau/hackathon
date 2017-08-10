@@ -13,13 +13,13 @@ import Link from '../Link';
 
 class Navigation extends React.Component {
 
-  componentDidMount() {
-    window.componentHandler.upgradeElement(this.root);
-  }
-
-  componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.root);
-  }
+  // componentDidMount() {
+  //   window.componentHandler.upgradeElement(this.root);
+  // }
+  //
+  // componentWillUnmount() {
+  //   window.componentHandler.downgradeElements(this.root);
+  // }
 
   render() {
     return (

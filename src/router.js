@@ -66,7 +66,7 @@ function resolve(routes, context) {
         ...keys.map((key) => {
           const query = route.data[key];
           const method = query.substring(0, query.indexOf(' ')); // GET
-          let url = query.substr(query.indexOf(' ') + 1);      // /api/tasks/$id
+          let url = query.substr(query.indexOf(' ') + 1); // /api/tasks/$id
           // TODO: Optimize
           Object.keys(params).forEach((k) => {
             url = url.replace(`${k}`, params[k]);

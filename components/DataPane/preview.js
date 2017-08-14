@@ -2,6 +2,24 @@ import React from 'react';
 import Paper from 'material-ui/Paper';
 import Vega from '../Vega';
 
+const yourVlSpec = {
+  $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
+  description: 'A simple bar chart with embedded data.',
+  data: {
+    values: [
+      { a: 'A', b: 28 }, { a: 'B', b: 55 }, { a: 'C', b: 43 },
+      { a: 'D', b: 91 }, { a: 'E', b: 81 }, { a: 'F', b: 53 },
+      { a: 'G', b: 19 }, { a: 'H', b: 87 }, { a: 'I', b: 52 },
+    ],
+  },
+  mark: 'bar',
+  encoding: {
+    // x: { field: 'a', type: 'ordinal' },
+    y: { field: 'b', type: 'quantitative' },
+  },
+};
+
+// eslint-disable-next-line no-unused-vars
 const spec = {
   $schema: 'https://vega.github.io/schema/vega/v3.0.json',
   width: 200,
@@ -94,5 +112,5 @@ const spec = {
 };
 
 export default () => (<Paper style={{ width: '260px', height: '260px' }}>
-  <Vega spec={spec} />
+  <Vega spec={yourVlSpec} />
 </Paper>);

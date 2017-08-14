@@ -12,7 +12,6 @@ import React, { PropTypes } from 'react';
 import history from '../../src/history';
 
 class Link extends React.Component {
-
   static propTypes = {
     to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
     onClick: PropTypes.func,
@@ -52,7 +51,6 @@ class Link extends React.Component {
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     return <a href={typeof to === 'string' ? to : history.createHref(to)} {...props} onClick={this.handleClick} />;
   }
-
 }
 
 export default Link;

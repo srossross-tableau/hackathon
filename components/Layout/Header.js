@@ -14,7 +14,6 @@ import Link from '../Link';
 import s from './Header.css';
 
 class Header extends React.Component {
-
   // componentDidMount() {
   //   window.componentHandler.upgradeElement(this.root);
   // }
@@ -36,7 +35,6 @@ class Header extends React.Component {
       </header>
     );
   }
-
 }
 
 export default Header;

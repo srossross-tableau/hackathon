@@ -8,6 +8,5 @@ export default (type) => {
       return <i className="fa fa-hashtag" style={{ color: '#cccccc', fontSize: '24px' }} />;
     default:
       return <i className="fa fa-question" style={{ color: '#cccccc', fontSize: '24px' }} />;
-
   }
 };

@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 // console.log('vega', vega);
 
 class VegaComponent extends PureComponent {
-
   static propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     spec: PropTypes.any.isRequired,

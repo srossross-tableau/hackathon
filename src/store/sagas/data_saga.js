@@ -3,14 +3,14 @@ import { takeLatest, put } from 'redux-saga/effects';
 function* fetchMeasures() {
   yield put({ type: 'data.measures.set',
     measures: [
-    { name: 'Amount', type: 'number', colId: 'amount' },
+      { name: 'Amount', type: 'number', colId: 'amount' },
     ] });
 }
 
 function* fetchDimensions() {
   yield put({ type: 'data.dimensions.set',
     dimensions: [
-    { name: 'Category', type: 'string', colId: 'cat' },
+      { name: 'Category', type: 'string', colId: 'cat' },
     ] });
 }
 

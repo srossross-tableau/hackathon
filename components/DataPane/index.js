@@ -11,7 +11,6 @@ import * as dataActions from '../../src/actions/data_actions';
 const ItemProp = PropTypes.shape({});
 
 class DataPaneComponent extends React.Component {
-
   static propTypes = {
     fetchMeasures: PropTypes.func.isRequired,
     fetchDimensions: PropTypes.func.isRequired,
@@ -27,17 +26,20 @@ class DataPaneComponent extends React.Component {
 
   render() {
     const dimensions = this.props.dimensions.map(dim =>
-      <DataListItem
-        name={dim.name} colId={dim.colId} key={dim.colId} type={dim.type}
-      />,
+      (<DataListItem
+        name={dim.name}
+        colId={dim.colId}
+        key={dim.colId}
+        type={dim.type}
+      />),
     );
     const measures = this.props.measures.map(measure =>
-      <DataListItem
+      (<DataListItem
         name={measure.name}
         colId={measure.colId}
         key={measure.colId}
         type={measure.type}
-      />,
+      />),
     );
     return (<div style={{ minWidth: '260px', borderRight: '1px solid #eeeeee' }} >
       <List>
